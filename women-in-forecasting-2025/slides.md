@@ -148,4 +148,5 @@ loop:
 
 
 - TimeCopilot: The GenAI Forecasting Agent · LLMs × Foundation Time Series Models
+- https://github.com/AzulGarza/TimeCopilot ⭐️
 - just `uv add timecopilot`
