@@ -1,5 +1,5 @@
 ---
-title: LLMs meet foundation time series models, are we ready for forecasting agents?
+title: TimeCopilot, LLMs meet foundation time series models
 author: Azul Garza (azul.garza.r@gmail.com, @AzulGarza)
 patat:
     incrementalLists: true
@@ -14,7 +14,6 @@ patat:
 > Hi 👋
 
 - i'm Azul
-- i'm also a proud mexican trans woman 🇲🇽🏳️‍⚧️
 - today i'm going to speak about some ideas around forecasting agents
 
 ---
@@ -69,20 +68,6 @@ patat:
 
 ---
 
-> two planning modes:
-
-- without feedback
-    - chain of thought: break tasks into step-by-step reasoning  
-    - tree of thought: explore multiple branches of reasoning  
-
-- with feedback
-    - react: reason + act + observe  
-    - reflexion: learn from past mistakes  
-    - human-in-the-loop: refine with external feedback  
-    - useful for open-ended, adaptive tasks
-
----
-
 > model
 
 - the brain. usually a large language model doing the heavy thinking
@@ -117,16 +102,6 @@ loop:
 
 ---
 
-> why now? LLMs changed everything
-
-- LLMs are:
-  - general reasoners
-  - tool orchestrators
-  - planners with memory
-- foundation models made agents practical, not just theoretical
-
----
-
 > agents across modalities
 
 
@@ -141,11 +116,12 @@ loop:
 
 - forecasting = high-impact, technical, widely needed
 - but: little agent-based experimentation
+
 - yet it’s a perfect fit:
-  - model selection
-  - error diagnosis
-  - data cleaning
-  - code generation
+    - model selection
+    - error diagnosis
+    - data cleaning
+    - code generation
 
 ---
 
@@ -153,9 +129,10 @@ loop:
 
 - current focus on language, vision, robotics
 - time series is often underhyped
+
 - we have the tools:
-  - foundation time series models, open source tools (Nixtla, GluonTS, SkTime, etc...)
-  - LangChain, OpenAI, Claude, Mistral
+    - foundation time series models, open source tools (Nixtla, GluonTS, SkTime, etc...)
+    - LangChain, OpenAI, Claude, Mistral
 
 ---
 
@@ -164,3 +141,11 @@ loop:
 - forecasting is complex and messy
 - agents make it navigable and human-friendly
 - no one’s cracked this yet
+
+---
+
+> let's go live!
+
+
+- TimeCopilot: The GenAI Forecasting Agent · LLMs × Foundation Time Series Models
+- just `uv add timecopilot`
