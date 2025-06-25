@@ -1,0 +1,9 @@
+[project]
+name = "women-in-forecasting-2025"
+version = "0.1.0"
+description = "talk for women in forecasting 2025"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "timecopilot>=0.0.5",
+]
