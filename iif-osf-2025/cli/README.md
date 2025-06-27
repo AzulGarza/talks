@@ -1,5 +1,5 @@
 ```bash
-uvx timecopilot forecast PATH
+uvx timecopilot forecast https://otexts.com/fpppy/data/AirPassengers.csv
 ```
 
 
