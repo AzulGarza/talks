@@ -14,7 +14,7 @@ patat:
 > hey! 👋
 
 - i'm Azul
-- today i'm going to speak about some ideas around forecasting agents
+- today i'm going to speak about some ideas around genai forecasting agents
 
 ---
 
