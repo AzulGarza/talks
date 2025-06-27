@@ -1,0 +1,9 @@
+[project]
+name = "python"
+version = "0.1.0"
+description = "talk for iif osf"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "timecopilot>=0.0.7",
+]
