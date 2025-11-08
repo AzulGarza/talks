@@ -1,6 +1,6 @@
 ---
 title: TimeCopilot, LLMs meet foundation time series models
-author: Azul Garza (azul.garza.r@gmail.com, @AzulGarza)
+author: Azul Garza (azul.garza.r@gmail.com, timecopilot.dev)
 patat:
     incrementalLists: true
     slideLevel: 1
@@ -17,9 +17,9 @@ patat:
 - originally from Mexico, now based in San Francisco, California
 - pronouns: she/her 💅
 - a time series fan
-    - co-founded nixtla
-    - co-created one of the largest time series ecosystems, the nixtlaverse
-    - co-built TimeGPT, the first foundation time series model
+    - spent the last decade building open tools and models for forecasting
+    - helped create one of the largest open-source time series ecosystems
+    - co-author of the first foundation time series models
     - more than 10 years of experience in the time series field
 - now i'm building TimeCopilot, the genai forecasting agent
 
