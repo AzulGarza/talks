@@ -13,148 +13,113 @@ patat:
 
 > hey! 👋
 
-- i'm Azul
-- today i'm going to speak about some ideas around genai forecasting agents
+- i'm Azul 
+- originally from Mexico, now based in San Francisco, California
+- pronouns: she/her 💅
+- a time series fan
+    - co-founded nixtla
+    - co-created one of the largest time series ecosystems, the nixtlaverse
+    - co-built TimeGPT, the first foundation time series model
+    - more than 10 years of experience in the time series field
+- now i'm building TimeCopilot, the genai forecasting agent
+
+---
+
+
+> everything starts with a question:
+
+
+- _what is the future of forecasting?_
 
 ---
 
 > but before that...
 
-- pride weekend! 🏳️‍🌈🏳️‍⚧️
-- we celebrate diversity
-- and also the most important thing in life:
-    - _love_ 💙
-- if you need to hear this:
-    - you are valid
-    - you are enough
-    - you are loved
+- _what is forecasting?_
+- time series: numerical data ordered through time
 
 ---
 
-> having said that...
+![time-series](img/time-series.png)
 
 ---
 
-> yesterday...
-
-- conversation around R vs python
-- but humans communicate differently
-- maybe the answer is in another place...
-
+> goal: predict the future, that's the forecasting problem
 
 ---
 
-![karpathy](img/karpathy.png)
+![forecast](img/forecast.png)
 
 ---
 
-> does this apply to forecasting?
+> lot of applications!!!
 
-- not before...
-- until _now_: jun 26, 2025
-
-
----
-
-![timecopilot](img/timecopilot.png)
-
----
-
-> but before, let's ask some questions
+- macroeconomics
+- finance
+- manufacturing
+- supply chain
+- retail
+- the list can go on and on...
 
 ---
 
-> what's all this hype around ai agents?
+> how has it been solved?
 
-- agents are trending across domains 
-    - code development
-    - research
-    - chat and productivity
-    - web and browsing
-    - enterprise workflows
-    - multimodal assistants
-- searches for "ai agents" have surged dramatically
-
+- stats approach: AutoARIMA, AutoETS, Theta, etc.
+- ml approach: LightGBM, LinearRegression, etc. (you need to create features)
+- dl approach: NHITS, NBEATS, LSTM, etc.
 
 ---
 
-![ai-agents](img/ai-agent.png)
+> which model to use?
+
+- rely on pipelines: 
+    - feature extraction
+    - model selection
+    - forecast generation
+    - deployment
+- new paradigm: foundation models
 
 ---
 
-> agents are *everywhere*
-
-- GitHub Copilot agents
-- GPTs as autonomous task-runners
-- Gemini CLI, AutoGPT, BabyAGI, Devin
+![foundation](img/foundation.png)
 
 ---
 
-> and the agent wave will grow
+- TimeGPT-1 (Nixtla)
+- Chronos (AWS)
+- Moirai (Salesforce)
+- FlowState (IBM)
+- TiRex (NXAI)
+- Toto (DataDog)
+- Sundial (Tsinghua University)
+- ...
 
 ---
 
-> but what *is* an ai agent?
+> which model to use?
 
-
----
-
-![ai-agents-def](img/ai-agent-def.png)
-
----
-
-> agent runtime
-
-- **orchestration:** what’s the goal? what are the rules?
-- **memory:** 
-    - short-term: what's happening right now?
-    - long-term: what do we already know about the user?
-
-- **reasoning & planning:** thinks through what to do next
+- rely on pipelines: 
+    - feature extraction
+    - model selection
+    - forecast generation
+    - deployment
 
 ---
 
-> model
-
-- the brain. usually a large language model doing the heavy thinking
-
----
-
-> tools
-
-- external helpers: functions, apis, or models the agent can call to get things done  
-  (for example: forecast(), plot(), explain_model())
-
----
-
-> a simpler definition, by LangChain
-
-- "a system that uses an LLM to decide the control flow of an application"
-
----
-
-> a mathematical intuition
-
-```
-loop:
-  observe environment
-  reason (LLM)
-  choose best action
-  update state
-  repeat until goal or termination
-```
-
-- agents = planning + tool use + feedback
-
----
-
-> agents across modalities
-
+> at the same time, in the AI space...
 
 ---
 
 ![multimodality](img/multimodal-agents.png)
 
+---
+
+> agents are *everywhere*: automating pipelines
+
+- GitHub Copilot agents
+- GPTs as autonomous task-runners
+- Gemini CLI, AutoGPT, BabyAGI, Devin
 
 ---
 
@@ -171,33 +136,39 @@ loop:
 
 ---
 
-> opportunity: open source can be a good place to experiment
-
-- current focus on language, vision, robotics
-- time series is often underhyped
-
-- we have the tools:
-    - foundation time series models, open source tools (Nixtla, GluonTS, SkTime, etc...)
-    - LangChain, OpenAI, Claude, Mistral
+![timecopilot](img/timecopilot.png)
 
 ---
 
-> why forecasting needs agents, and why now
+- TimeCopilot is a generative agent that applies a systematic forecasting approach using large language models (LLMs) to:
+    - interpret statistical features and patterns
+    - guide model selection based on data characteristics
+    - explain technical decisions in natural language
+    - answer domain-specific questions about forecasts
 
-- forecasting is complex and messy
-- agents make it navigable and human-friendly
-- no one’s cracked this yet
-- they give the opportunity to use the strengths of
-    - different programming languages
-    - different implementations
-    - a lot of documentation!
+---
 
+![timecopilot-arch](img/timecopilot-arch.jpg)
+
+---
+
+> features
+
+- largest hub of time series foundation models: +30
+- support for any llm compatible with pydantic-ai
+- 1st place in the gift-eval benchmark amongst open-source solutions
+
+
+---
+
+![gift-eval](img/gift-eval.png)
 
 ---
 
 > let's go live!
 
 
+- `uv add timecopilot`
 - TimeCopilot: The GenAI Forecasting Agent · LLMs × Foundation Time Series Models
 - `https://github.com/AzulGarza/TimeCopilot` ⭐️
 - `timecopilot.dev`
